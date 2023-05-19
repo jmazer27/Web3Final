@@ -365,9 +365,30 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Hero
+============= */
 #hero {
   background-image: url("../img/hero/herovideo.jpg");
   background-size: cover;
   background-position: center;
   height: 65vh;
 }
+
+#hero-info h1 {
+  color: var(--teal);
+}
+
+/* =============
+    Hero 2
+============= */
+#hero-2 {
+  background-color: var(--teal);
+}
+#hero-2 ul {
+  list-style: none;
+}
+
+/* =============
+    Features
+============= */

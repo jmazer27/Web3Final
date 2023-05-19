@@ -1,8 +1,16 @@
-// Hero
+/* =============
+    Hero
+============= */
 
 #hero{
     background-image: url("../img/hero/herovideo.jpg");
     background-size: cover;
     background-position: center;
     height: 65vh;
+}
+
+#hero-info{
+    h1{
+        color: var(--teal);
+    }
 }
