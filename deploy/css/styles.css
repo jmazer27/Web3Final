@@ -394,10 +394,10 @@ textarea {
 /* =============
     Hero 2
 ============= */
-#hero-2 {
+#hero2full {
   background-color: var(--teal);
 }
-#hero-2 ul {
+#hero2full ul {
   list-style: none;
 }
 
