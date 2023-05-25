@@ -9,12 +9,29 @@ section {
 #hero2full {
 
     background-color: var(--teal);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
     
 
 }
+.header-container {
+    text-align: center;
+  }
+  
+  .header-title {
+    font-size: 90px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bolder;
+  }
+  
+  .header-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
 
 .card-container {
     display: flex;
@@ -35,7 +52,7 @@ section {
   .card-header {
     color: white;
     font-weight: bold;
-    font-size: xx-large;
+    font-size: 45px;
     
     text-align: left;
   }
