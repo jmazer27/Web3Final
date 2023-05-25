@@ -1,6 +1,11 @@
 /* =============
     Hero 2
 ============= */
+
+section {
+    
+}
+
 #hero2full {
 
     background-color: var(--teal);
@@ -30,12 +35,10 @@
         background: url(img/hero2/main.png);
     }
 
-
-
 }
 
 ul {
-   
+
     display: flex;
     flex-direction: column;
 
@@ -75,4 +78,6 @@ ul {
 
 
     }
+
+
 }
