@@ -409,59 +409,66 @@ textarea {
 ============= */
 #hero2full {
   background-color: var(--teal);
-}
-#hero2full ul {
-  list-style: none;
-}
-
-/* Printer */
-#hero2 {
-  display: flex;
-  justify-content: center;
-}
-#hero2 h1 {
-  text-align: center;
-}
-#hero2 img {
-  width: 567px;
-  height: 330px;
-  background: url(img/hero2/main.png);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-ul {
+.card-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: transparent;
+  margin: -8px; /* Add this line */
 }
-ul #whitebar {
-  background-color: white;
-}
-ul li {
-  padding-left: 10px;
-}
-ul li h1 {
-  font-family: "Hiragino Kaku Gothic Std";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 31px;
-  line-height: 46px;
+
+.card-item {
+  flex: 1 1 300px; /* Adjust the width as needed */
+  background-color: transparent;
+  border: none;
+  margin: 8px; /* Adjusted to create the gap */
+  padding: 10px;
   text-align: left;
-  color: white;
-}
-ul li h2 {
-  font-family: "Hiragino Kaku Gothic Std";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 11px;
-  line-height: 16px;
-}
-ul li p {
-  font-family: "Hiragino Kaku Gothic ProN";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
 }
 
+.card-header {
+  color: white;
+  font-weight: bold;
+  font-size: xx-large;
+  text-align: left;
+}
+
+.card-subheader {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.card-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card-content li:nth-child(odd) {
+  background-color: #fff;
+}
+
+.card-content li {
+  padding: 5px;
+  line-height: 1.5;
+}
+
+.card-caption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .card-item {
+    flex-basis: 100%;
+    gap: 24px; /* Added to create the gap on smaller screens */
+  }
+}
 /* =============
     Features
 ============= */
