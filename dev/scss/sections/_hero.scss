@@ -10,6 +10,13 @@
 }
 
 #hero-info{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". hero-info .";
+    display: block;
+    justify-content: center;
+    text-align: center;
+
     h1{
         color: var(--teal);
     }

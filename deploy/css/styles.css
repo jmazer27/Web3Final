@@ -335,6 +335,11 @@ template {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Hiragino Kaku Gothic Std";
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
 /* =============
     Buttons
 ============= */
@@ -387,6 +392,14 @@ textarea {
   height: 65vh;
 }
 
+#hero-info {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero-info .";
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
 #hero-info h1 {
   color: var(--teal);
 }
@@ -401,9 +414,94 @@ textarea {
   list-style: none;
 }
 
+/* Printer */
+#hero2 {
+  display: flex;
+  justify-content: center;
+}
+#hero2 h1 {
+  text-align: center;
+}
+#hero2 img {
+  width: 567px;
+  height: 330px;
+  background: url(img/hero2/main.png);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+ul #whitebar {
+  background-color: white;
+}
+ul li {
+  padding-left: 10px;
+}
+ul li h1 {
+  font-family: "Hiragino Kaku Gothic Std";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 31px;
+  line-height: 46px;
+  text-align: left;
+  color: white;
+}
+ul li h2 {
+  font-family: "Hiragino Kaku Gothic Std";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 16px;
+}
+ul li p {
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+
 /* =============
     Features
 ============= */
+#technical {
+  display: flex;
+}
+#technical h1 {
+  display: none;
+}
+#technical ul {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  left: 741px;
+  top: 2150px;
+  /* Off white
+
+  boxes
+  */
+  background: #FAFAFA;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
+  border-radius: 34px;
+}
+#technical ul lI {
+  width: 623px;
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  /* or 35px */
+  letter-spacing: -0.02em;
+  /* black */
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
 /* =============
     Materials
 ============= */

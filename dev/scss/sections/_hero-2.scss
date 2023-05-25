@@ -1,12 +1,78 @@
 /* =============
     Hero 2
 ============= */
-#hero2full{
+#hero2full {
 
- background-color: var(--teal);
+    background-color: var(--teal);
 
-    ul{
+    ul {
         list-style: none
     }
-    
+
+}
+
+/* Printer */
+
+
+
+#hero2 {
+    display: flex;
+    justify-content: center;
+
+    h1 {
+        text-align: center;
+    }
+
+
+    img {
+        width: 567px;
+        height: 330px;
+        background: url(img/hero2/main.png);
+    }
+
+
+
+}
+
+ul {
+   
+    display: flex;
+    flex-direction: column;
+
+
+    #whitebar {
+        background-color: white;
+    }
+
+    li {
+        padding-left: 10px;
+
+        h1 {
+            font-family: 'Hiragino Kaku Gothic Std';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 31px;
+            line-height: 46px;
+            text-align: left;
+            color: white;
+        }
+
+        h2 {
+            font-family: 'Hiragino Kaku Gothic Std';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 11px;
+            line-height: 16px;
+        }
+
+        p {
+            font-family: 'Hiragino Kaku Gothic ProN';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+
+    }
 }
