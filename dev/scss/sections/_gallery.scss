@@ -1,9 +1,120 @@
-/* =============
-    Gallery
-============= */
-
-a{
-
-width: 50px;
-text-decoration: none;
-}
+/* Gallery section */
+#gallery {
+    text-align: center;
+  }
+  
+  #gallery h1 {
+    font-size: 46px;
+    font-weight: 800;
+    color: var(--teal);
+    margin-bottom: 20px;
+  }
+  
+  #images {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  #images ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+    justify-content: center;
+    margin: 0 16px;
+  }
+  
+  #images li {
+    list-style: none;
+  }
+  
+  #images img {
+    width: 289px;
+    height: 260px;
+  }
+  
+  #images .roundbutton {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Newsletter section */
+  #newsletter {
+    text-align: center;
+    margin-top: 40px;
+    display: grid;
+    justify-items: center;
+    grid-gap: 16px;
+    margin: 0 16px;
+  }
+  
+  #newsletter h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--teal);
+    margin-bottom: 20px;
+  }
+  
+  #newsletter .input-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  #newsletter input[type="email"] {
+    flex: 1;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-color: var(--teal);
+  }
+  
+  #newsletter .roundbutton {
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  
+  /* Mobile-specific styles */
+  @media screen and (max-width: 600px) {
+    #images ul {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      justify-content: center;
+      grid-gap: 16px;
+      margin: 0;
+    }
+  
+    #images li:nth-child(n+5) {
+      display: none;
+    }
+  
+    #images img {
+      width: 171.18px;
+      height: 154px;
+    }
+  
+    #newsletter {
+      grid-template-columns: 1fr;
+    }
+  
+    #newsletter .input-container {
+      flex-direction: column;
+    }
+  
+    #newsletter input[type="email"] {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    #newsletter .input-container {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 16px;
+      justify-items: center;
+    }
+  
+    #newsletter .roundbutton {
+      justify-self: center;
+    }
+  }
+  
