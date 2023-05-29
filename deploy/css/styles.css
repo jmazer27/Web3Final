@@ -384,6 +384,87 @@ textarea {
     Footer
 ============= */
 /* =============
+    Footer
+============= */
+footer {
+  background-color: var(--navy);
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+  padding-bottom: 30px;
+  margin-top: 60px;
+}
+footer h1 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+footer h2 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 16px;
+}
+footer p {
+  font-weight: 400;
+  font-size: 12px;
+  margin: 16px auto 16px;
+}
+footer > div {
+  grid-area: footer;
+}
+footer > div #product {
+  grid-template-columns: 70% auto;
+  padding: 16px;
+  grid-area: product;
+}
+footer > div #product h1 {
+  color: white;
+}
+footer > div #product P {
+  color: white;
+}
+footer > div #glowforge {
+  grid-template-columns: 70% auto;
+  padding: 16px;
+  grid-area: glowforge;
+}
+footer > div #glowforge h1 {
+  color: white;
+}
+footer > div #glowforge P {
+  color: white;
+}
+footer > div #contact {
+  grid-template-columns: 70% auto;
+  padding: 16px;
+  grid-area: contact;
+}
+footer > div #contact h1 {
+  color: white;
+}
+footer > div #contact P {
+  color: white;
+}
+footer > div #sales {
+  grid-template-columns: 70% auto;
+  padding: 16px;
+  grid-area: sales;
+}
+footer > div #sales h1 {
+  color: white;
+}
+footer > div #sales P {
+  color: white;
+}
+@media (min-width: 1024px) {
+  footer > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "product glowforge contact sales";
+  }
+}
+
+/* =============
     Hero
 ============= */
 #hero {
@@ -488,46 +569,70 @@ textarea {
     gap: 24px; /* Added to create the gap on smaller screens */
   }
 }
-/* =============
-    Features
-============= */
-#technical {
-  display: flex;
+/* Features section */
+#technical h1,
+#home h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 46px;
+  font-weight: 800;
+  color: var(--teal);
+  margin-bottom: 20px;
+  padding-right: 16px;
+  border-bottom: 2px solid black;
+  width: 600px;
 }
-#technical h1 {
-  display: none;
-}
-#technical ul {
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 10px;
-  left: 741px;
-  top: 2150px;
-  /* Off white
 
-  boxes
-  */
-  background: #FAFAFA;
-  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
-  border-radius: 34px;
+#technical .grid-container,
+#home .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin: 0 16px; /* Set even margin on both sides */
 }
-#technical ul lI {
-  width: 623px;
+
+#technical h1 {
+  text-align: right; /* Move "Technical Features" to the right */
+}
+
+#home h1 {
+  text-align: left; /* Move "Technical Features" to the right */
+}
+
+#technical img,
+#home img {
+  max-width: 100%;
+  height: auto;
+}
+
+#technical ul li,
+#home ul li {
   font-family: "Hiragino Kaku Gothic Pro";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
-  /* or 35px */
-  letter-spacing: -0.02em;
-  /* black */
   color: #000000;
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
+#technical ul,
+#home ul {
+  background-color: var(--offwhite);
+  padding-bottom: 180px;
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: 600px) {
+  #technical .grid-container,
+  #home .grid-container {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+    margin: 0; /* Remove margin on mobile */
+  }
+  #technical img,
+  #home img {
+    display: none;
+  }
+}
 /* =============
     Materials
 ============= */

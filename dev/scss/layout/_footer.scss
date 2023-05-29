@@ -1,3 +1,101 @@
 /* =============
     Footer
 ============= */
+
+/* =============
+    Footer
+============= */
+
+footer {
+    background-color: var(--navy);
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". footer .";
+    padding-bottom: 30px;
+    margin-top: 60px;
+    h1{
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    h2{
+        font-weight: 600;
+        font-size: 16px;
+        margin-top: 16px;
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 12px;
+        margin: 16px auto 16px;
+        
+    }    
+
+    >div {
+        grid-area: footer;
+
+        #product {
+            grid-template-columns: 70% auto;
+            padding: 16px;
+            grid-area: product;
+            h1{
+                color: white;
+            }
+
+            P{
+                color: white;
+            }
+        }
+
+
+        #glowforge {
+            grid-template-columns: 70% auto;
+            padding: 16px;
+            grid-area: glowforge;
+            h1{
+                color: white;
+            }
+
+            P{
+                color: white;
+            }
+        }
+
+        #contact {
+            grid-template-columns: 70% auto;
+            padding: 16px;
+            grid-area: contact;
+            h1{
+                color: white;
+            }
+
+            P{
+                color: white;
+            }
+        }
+        #sales {
+            grid-template-columns: 70% auto;
+            padding: 16px;
+            grid-area: sales;
+            h1{
+                color: white;
+            }
+
+            P{
+                color: white;
+            }
+        }
+       
+
+        @include lg{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: 
+            "product glowforge contact sales"
+        }
+
+       
+
+    }
+}
