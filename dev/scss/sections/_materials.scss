@@ -1,3 +1,74 @@
 /* =============
     Materials
 ============= */
+.card-section {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.card {
+    width: 400px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.card-title {
+    margin-bottom: 10px;
+    font-size: 90px;
+    margin-bottom: 10px;
+    color: var(--teal);
+    font-weight: bolder;
+}
+
+.card-subtitle {
+    font-weight: bold;
+    margin-top: 5px;
+
+}
+
+.card-divider {
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.card-lines {
+    list-style: none;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.card-lines li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card-lines li:nth-child(odd) {
+    background-color: var(--gray);
+}
+
+.card-lines p {
+    flex: 1;
+    margin: 0;
+    padding: 5px;
+}
+
+.card-lines p:nth-child(2) {
+    margin-left: 10px;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .card-section {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .card {
+        width: 100%;
+    }
+}
