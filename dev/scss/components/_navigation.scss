@@ -91,10 +91,15 @@ header {
             display: inline;
             transition: .3s;
         }
-
-
-
     }
-
+    #main-menu a {
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s;
+      }
+      
+      #main-menu a:hover {
+        color: var(--teal);
+      }
 
 }
