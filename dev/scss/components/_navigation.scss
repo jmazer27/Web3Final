@@ -1,8 +1,8 @@
 /* =============
     Navigation
 ============= */
-header{
-   
+header {
+
     display: flex;
     background-color: var(--offwhite);
     align-items: center;
@@ -12,86 +12,89 @@ header{
     border-bottom: 8px solid var(--teal);
 
 
-    #logo{
-        ul{
-      list-style: none;
+
+    #logo {
+        ul {
+            list-style: none;
 
         }
 
-        img{
+        img {
             padding-right: 150px;
-             
+
         }
     }
 
 
     #burger-btn {
 
-            display:block;
-            span,
-            span::before,
-            span::after {
-                height: 5px;
-                width: 40px;
-                background-color: var(--teal);
-                margin-right: 16px;
-            }
-    
-            span {
-                display: block;
-                position: relative;
-    
-                &::before {
-                    position: absolute;
-                    content: " ";
-                    top: -16px;
-                }
-    
-                &::after {
-                    position: absolute;
-                    content: " ";
-                    top: 16px;
-                }
-            }
+        display: block;
+
+        span,
+        span::before,
+        span::after {
+            height: 5px;
+            width: 40px;
+            background-color: var(--teal);
+            margin-right: 16px;
         }
 
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                
-        
-                #burger-container {
-                    display:block;
-                    position: relative;
-                    z-index: 3;
-                    @include lg {
-                        display: none;
-                    }
-                }
-        
-                #main-menu {
-                    ul {
-                        display: flex;
-                        padding-right: 25px;
-                        list-style: none;
-                        gap: 16px;
-                    }
-        
-                    display: none;
-        
-                    @include lg {
-                        display: inline;
-                    }
+        span {
+            display: block;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: " ";
+                top: -16px;
+            }
+
+            &::after {
+                position: absolute;
+                content: " ";
+                top: 16px;
+            }
+        }
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 
-                    &.show-menu{
-                        display:inline;
-                        transition:.3s;
-                    }
-            
-               
-               
-                }
-     
-        
+    #burger-container {
+        display: block;
+        position: relative;
+        z-index: 3;
+
+        @include lg {
+            display: none;
+        }
+    }
+
+    #main-menu {
+        ul {
+            display: flex;
+            padding-right: 25px;
+            list-style: none;
+            gap: 16px;
+        }
+
+        display: none;
+
+        @include lg {
+            display: inline;
+        }
+
+
+        &.show-menu {
+            display: inline;
+            transition: .3s;
+        }
+
+
+
+    }
+
+
 }

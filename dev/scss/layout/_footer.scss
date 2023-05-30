@@ -2,9 +2,6 @@
     Footer
 ============= */
 
-/* =============
-    Footer
-============= */
 
 footer {
     background-color: var(--navy);
@@ -12,7 +9,7 @@ footer {
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
     padding-bottom: 30px;
-    margin-top: 60px;
+    padding-top: 10px;
     h1{
         font-weight: 600;
         font-size: 20px;
