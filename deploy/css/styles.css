@@ -799,6 +799,7 @@ footer > div #sales P {
   .card-section {
     flex-wrap: wrap;
     justify-content: flex-start;
+    gap: 1px;
   }
   .card {
     width: 100%;
