@@ -711,7 +711,7 @@ footer > div #sales P {
 .card-section {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 100px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -819,7 +819,7 @@ footer > div #sales P {
 }
 
 #images .roundbutton {
-  margin-top: 20px;
+  margin-top: 40px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -839,7 +839,7 @@ footer > div #sales P {
   font-size: 24px;
   font-weight: 800;
   color: var(--teal);
-  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 #newsletter .input-container {
