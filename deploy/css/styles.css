@@ -377,6 +377,78 @@ textarea {
 /* =============
     Navigation
 ============= */
+header {
+  display: flex;
+  background-color: var(--offwhite);
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 16px;
+  border-bottom: 8px solid var(--teal);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #logo ul {
+  list-style: none;
+}
+header #logo img {
+  padding-right: 150px;
+}
+header #burger-btn {
+  display: block;
+}
+header #burger-btn span,
+header #burger-btn span::before,
+header #burger-btn span::after {
+  height: 5px;
+  width: 40px;
+  background-color: var(--teal);
+  margin-right: 16px;
+}
+header #burger-btn span {
+  display: block;
+  position: relative;
+}
+header #burger-btn span::before {
+  position: absolute;
+  content: " ";
+  top: -16px;
+}
+header #burger-btn span::after {
+  position: absolute;
+  content: " ";
+  top: 16px;
+}
+header #burger-container {
+  display: block;
+  position: relative;
+  z-index: 3;
+}
+@media (min-width: 1024px) {
+  header #burger-container {
+    display: none;
+  }
+}
+header #main-menu {
+  display: none;
+}
+header #main-menu ul {
+  display: flex;
+  padding-right: 25px;
+  list-style: none;
+  gap: 16px;
+}
+@media (min-width: 1024px) {
+  header #main-menu {
+    display: inline;
+  }
+}
+header #main-menu.show-menu {
+  display: inline;
+  transition: 0.3s;
+}
+
 /* =============
     Header
 ============= */
