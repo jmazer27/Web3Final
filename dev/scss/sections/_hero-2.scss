@@ -77,7 +77,9 @@ section {
     padding: 5px;
     line-height: 1.5;
   }
-  
+  .whitetext{
+    color: white;
+  }
   .card-caption {
     text-align: center;
     margin-top: 10px;
@@ -86,7 +88,7 @@ section {
   }
   
   /* Mobile Styles */
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .card-item {
       flex-basis: 100%;
       gap: 24px; /* Added to create the gap on smaller screens */

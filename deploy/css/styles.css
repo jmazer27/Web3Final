@@ -633,6 +633,10 @@ footer > div #sales P {
   line-height: 1.5;
 }
 
+.whitetext {
+  color: white;
+}
+
 .card-caption {
   text-align: center;
   margin-top: 10px;
@@ -641,7 +645,7 @@ footer > div #sales P {
 }
 
 /* Mobile Styles */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .card-item {
     flex-basis: 100%;
     gap: 24px; /* Added to create the gap on smaller screens */
@@ -795,7 +799,7 @@ footer > div #sales P {
 }
 
 /* Mobile Styles */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .card-section {
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -824,25 +828,20 @@ footer > div #sales P {
 }
 
 #images {
-  margin-top: 40px;
   text-align: center;
 }
 
 #images ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "g1 g2 g3 g4" "g5 g6 g7 g8" "g9 g10 g11 g12";
   grid-gap: 16px;
   justify-content: center;
-  margin: 0 16px;
+  margin: 0 200px;
 }
 
 #images li {
   list-style: none;
-}
-
-#images img {
-  width: 289px;
-  height: 260px;
 }
 
 #images .roundbutton {
@@ -889,20 +888,21 @@ footer > div #sales P {
 }
 
 /* Mobile-specific styles */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   #images ul {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    justify-content: center;
+    grid-template-areas: "g1 g2" "g3 g4";
     grid-gap: 16px;
+    justify-content: center;
     margin: 0;
+    margin-right: 45px;
   }
   #images li:nth-child(n+5) {
     display: none;
   }
   #images img {
-    width: 171.18px;
-    height: 154px;
+    width: 99%;
+    height: 99%;
   }
   #newsletter {
     grid-template-columns: 1fr;
@@ -917,7 +917,6 @@ footer > div #sales P {
   #newsletter .input-container {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 16px;
     justify-items: center;
   }
   #newsletter .roundbutton {
