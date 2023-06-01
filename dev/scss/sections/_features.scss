@@ -28,13 +28,20 @@
     }
 
     ul{
-      background-color: red;
+      background-color: var(offwhite);
+
     }
 
     #t1 {
       @include lg {
         grid-area: t1;
-        margin-left: -100px;
+        display: flex;
+       justify-content: right;
+       font-size: 28px;
+        font-weight: 800;
+        color: var(--teal);
+        border-bottom: 2px solid black;
+ 
       }
     }
 
@@ -53,6 +60,12 @@
     #t4 {
       @include lg {
         grid-area: t4;
+        display: flex;
+        justify-content: left;
+        font-size: 28px;
+        font-weight: 800;
+        color: var(--teal);
+        border-bottom: 2px solid black;
       }
     }
 

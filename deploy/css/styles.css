@@ -676,12 +676,17 @@ footer > div #sales P {
   }
 }
 #technical #technical-container ul {
-  background-color: red;
+  background-color: var(offwhite);
 }
 @media (min-width: 1024px) {
   #technical #technical-container #t1 {
     grid-area: t1;
-    margin-left: -100px;
+    display: flex;
+    justify-content: right;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--teal);
+    border-bottom: 2px solid black;
   }
 }
 @media (min-width: 1024px) {
@@ -697,6 +702,12 @@ footer > div #sales P {
 @media (min-width: 1024px) {
   #technical #technical-container #t4 {
     grid-area: t4;
+    display: flex;
+    justify-content: left;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--teal);
+    border-bottom: 2px solid black;
   }
 }
 @media (min-width: 1024px) {
