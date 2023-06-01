@@ -651,88 +651,63 @@ footer > div #sales P {
     gap: 24px; /* Added to create the gap on smaller screens */
   }
 }
-#technical .grid-container {
+#technical {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  grid-gap: 16px;
-  margin: 0 70px; /* Add even margins on both sides */
-  margin-top: 50px;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". tech .";
 }
-
-#technical .grid-container > div {
+#technical #technical-container {
+  display: grid;
+  grid-area: tech;
+}
+#technical #technical-container img {
   width: 100%;
+  display: none;
 }
-
-#technical .grid-container > .top-left img,
-#technical .grid-container > .bottom-right img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover; /* Preserve aspect ratio and fill the container */
+@media (min-width: 1024px) {
+  #technical #technical-container img {
+    display: block;
+  }
 }
-
-#technical .grid-container > .top-right ul {
-  background-color: var(--offwhite);
-  padding: 20px;
-  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
-  border-radius: 34px;
-  max-height: 388px;
-  max-width: 623px;
-  overflow: auto;
-  margin-left: 150px;
+@media (min-width: 1024px) {
+  #technical #technical-container {
+    grid-template-columns: 50% auto;
+    grid-template-areas: ".. t1" "t2 t3" "t4 t4" "t5 t6";
+  }
 }
-
-#technical .grid-container > .bottom-left ul {
-  background-color: var(--offwhite);
-  padding: 20px;
-  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
-  border-radius: 34px;
-  max-height: 388px;
-  max-width: 623px;
-  overflow: auto;
+#technical #technical-container ul {
+  background-color: red;
 }
-
-#technical .grid-container > .top-right ul li,
-#technical .grid-container > .bottom-left ul li {
-  white-space: normal;
-  overflow: visible;
-  text-overflow: clip;
+@media (min-width: 1024px) {
+  #technical #technical-container #t1 {
+    grid-area: t1;
+    margin-left: -100px;
+  }
 }
-
-#technical .sub-h1 {
-  text-align: right; /* Center the headings */
-  margin-top: 40px;
-  font-size: 46px;
-  font-weight: 800;
-  color: var(--teal);
-  margin-bottom: 20px;
-  border-bottom: 2px solid black;
-  width: 60%;
-  margin-left: 310px;
+@media (min-width: 1024px) {
+  #technical #technical-container #t2 {
+    grid-area: t2;
+  }
 }
-
-#technical .sub-h2 {
-  text-align: left; /* Center the headings */
-  margin-top: 40px;
-  font-size: 46px;
-  font-weight: 800;
-  color: var(--teal);
-  margin-bottom: 20px;
-  border-bottom: 2px solid black;
-  width: 60%;
+@media (min-width: 1024px) {
+  #technical #technical-container #t3 {
+    grid-area: t3;
+  }
 }
-
-#technical .bottom-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (min-width: 1024px) {
+  #technical #technical-container #t4 {
+    grid-area: t4;
+  }
 }
-
-#technical .bottom-right img {
-  max-width: 100%;
-  max-height: 100%;
-  height: auto;
-  margin-left: 160px;
+@media (min-width: 1024px) {
+  #technical #technical-container #t5 {
+    grid-area: t5;
+  }
+}
+@media (min-width: 1024px) {
+  #technical #technical-container #t6 {
+    grid-area: t6;
+  }
 }
 
 /* =============
