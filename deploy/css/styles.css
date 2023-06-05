@@ -798,6 +798,88 @@ footer > div #sales P {
 /* =============
     Products
 ============= */
+/* CSS for the product card */
+.productcard {
+  align-items: center;
+  padding-bottom: 20px;
+  background-color: var(--offwhite); /* Add your desired background color */
+  border-radius: 34px; /* Add border radius to round the corners */
+  width: fit-content; /* Adjust the width to fit the content */
+  margin: 0 6px; /* Add margin to create the 6px gap */
+  overflow: hidden;
+}
+
+/* CSS for the heading */
+.productcard h1 {
+  text-align: center;
+}
+
+/* CSS for the image */
+.productcard img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px; /* Adjust the value as needed */
+  height: auto;
+  border-bottom: 1px solid var(--teal); /* Add border bottom under the image */
+  padding-bottom: 20px; /* Add spacing under the image */
+}
+
+/* CSS for the pricing section */
+.productcard div:last-of-type {
+  display: flex;
+  align-items: flex-start; /* Align items at the start of the flex container */
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* CSS for the price container */
+.productcard div:last-of-type > div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* CSS for the price */
+.productcard h2 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+/* CSS for the small text */
+.productcard .smallertext {
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+/* CSS for the monthly payment */
+.productcard p {
+  margin: 0;
+}
+
+/* CSS for the button */
+.productcard button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--teal);
+  color: white;
+  cursor: pointer;
+}
+
+/* Optional: Hover effect for the button */
+.productcard button:hover {
+  background-color: var(--darkteal);
+}
+
+/* CSS to remove bullet points from the unordered list */
+.productcard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* =============
     Reviews
 ============= */
