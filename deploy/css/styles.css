@@ -807,6 +807,15 @@ footer > div #sales P {
   width: fit-content; /* Adjust the width to fit the content */
   margin: 0 6px; /* Add margin to create the 6px gap */
   overflow: hidden;
+  margin-bottom: 26px;
+  margin-left: 120px;
+}
+@media (min-width: 1024px) {
+  .productcard {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
 }
 
 /* CSS for the heading */
@@ -842,8 +851,8 @@ footer > div #sales P {
 
 /* CSS for the price */
 .productcard h2 {
-  margin: 0;
   margin-bottom: 5px;
+  margin-left: 10px;
 }
 
 /* CSS for the small text */
@@ -859,7 +868,7 @@ footer > div #sales P {
 
 /* CSS for the button */
 .productcard button {
-  margin-left: 10px;
+  margin-right: 10px;
   padding: 8px 16px;
   border-radius: 20px;
   border: none;

@@ -19,6 +19,7 @@
 // }
 
 /* CSS for the product card */
+
 .productcard {
 //   display: flex;
 //   flex-direction: column;
@@ -29,6 +30,15 @@
   width: fit-content; /* Adjust the width to fit the content */
   margin: 0 6px; /* Add margin to create the 6px gap */
   overflow: hidden; 
+  margin-bottom: 26px;
+  margin-left: 120px;
+  
+@include lg{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+ 
 
 }
 
@@ -66,8 +76,8 @@
 
 /* CSS for the price */
 .productcard h2 {
-  margin: 0;
   margin-bottom: 5px;
+  margin-left: 10px;
   
 }
 
@@ -84,7 +94,7 @@
 
 /* CSS for the button */
 .productcard button {
-  margin-left: 10px;
+ margin-right: 10px;
   padding: 8px 16px;
   border-radius: 20px;
   border: none;
