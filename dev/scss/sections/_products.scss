@@ -13,7 +13,7 @@
 //             align-items: center;
 //             flex-direction: column;
 //             background-color: green;
-            
+
 //         }
 //     }
 // }
@@ -21,96 +21,94 @@
 /* CSS for the product card */
 
 .productcard {
-//   display: flex;
-//   flex-direction: column;
+  //   display: flex;
+  //   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
-  background-color: var(--offwhite); /* Add your desired background color */
-  border-radius: 34px; /* Add border radius to round the corners */
-  width: fit-content; /* Adjust the width to fit the content */
-  margin: 0 6px; /* Add margin to create the 6px gap */
-  overflow: hidden; 
+  background-color: var(--offwhite);
+  border-radius: 34px;
+  width: fit-content;
+  margin: 0 6px;
+  overflow: hidden;
   margin-bottom: 26px;
   margin-left: 120px;
-  
-@include lg{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
- 
+
+  @include lg {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
 
 }
 
-/* CSS for the heading */
+
 .productcard h1 {
   text-align: center;
 }
 
-/* CSS for the image */
+
 .productcard img {
   display: block;
   margin: 0 auto;
   width: 100%;
-  max-width: 300px; /* Adjust the value as needed */
+  max-width: 300px;
   height: auto;
-  border-bottom: 1px solid var(--teal); /* Add border bottom under the image */
-  padding-bottom: 20px; /* Add spacing under the image */
+  border-bottom: 1px solid var(--teal);
+  padding-bottom: 20px;
 }
 
-/* CSS for the pricing section */
+/* pricing */
 .productcard div:last-of-type {
   display: flex;
-  align-items: flex-start; /* Align items at the start of the flex container */
+  align-items: flex-start;
   justify-content: space-between;
   margin-top: 20px;
   width: 100%;
 }
 
-/* CSS for the price container */
-.productcard div:last-of-type > div {
+/* price container */
+.productcard div:last-of-type>div {
   display: flex;
   flex-direction: column;
-  
+
 }
 
-/* CSS for the price */
+/* price */
 .productcard h2 {
   margin-bottom: 5px;
   margin-left: 10px;
-  
+
 }
 
-/* CSS for the small text */
+/* small text */
 .productcard .smallertext {
   font-size: 10px;
   margin-left: 10px;
 }
 
-/* CSS for the monthly payment */
+/* monthly payment */
 .productcard p {
   margin: 0;
 }
 
-/* CSS for the button */
+/* button */
 .productcard button {
- margin-right: 10px;
+  margin-right: 10px;
   padding: 8px 16px;
   border-radius: 20px;
   border: none;
-  background-color:var(--teal);
+  background-color: var(--teal);
   color: white;
   cursor: pointer;
 }
 
-/* Optional: Hover effect for the button */
+/* Hover  */
 .productcard button:hover {
-  background-color:var(--darkteal);
+  background-color: var(--darkteal);
 }
 
-/* CSS to remove bullet points from the unordered list */
+/*  */
 .productcard ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
