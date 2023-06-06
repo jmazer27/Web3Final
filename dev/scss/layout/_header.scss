@@ -1,3 +1,90 @@
 /* =============
     Header
 ============= */
+header {
+
+    background-color: var(--offwhite);
+    align-items: center;
+    padding-left: 16px;
+    border-bottom: 8px solid var(--teal);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "logo burger"
+        "nav nav";
+
+    @include lg{
+        grid-template-columns: 10% auto;
+    grid-template-areas: "logo nav";
+    }
+
+
+
+    #logo {
+        grid-area: logo;
+
+        ul {
+            list-style: none;
+
+        }
+
+        img {
+            padding-right: 150px;
+
+        }
+    }
+
+
+    #burger-container {
+        display: block;
+        position: relative;
+        z-index: 3;
+
+        @include lg {
+            display: none;
+        }
+
+        #burger-btn {
+            grid-area: burger;
+            display: block;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            span,
+            span::before,
+            span::after {
+                height: 5px;
+                width: 40px;
+                background-color: var(--teal);
+                margin-right: 16px;
+            }
+
+            span {
+                display: block;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: " ";
+                    top: -16px;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: " ";
+                    top: 16px;
+                }
+            }
+        }
+    }
+
+    #main-menu {
+        grid-area: nav;
+    }
+
+}

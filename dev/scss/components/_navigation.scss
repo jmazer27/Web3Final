@@ -1,106 +1,47 @@
 /* =============
     Navigation
 ============= */
-header {
-
-    display: flex;
-    background-color: var(--offwhite);
-    align-items: center;
-    // padding-top: 5px;
-    // padding-bottom: 5px;
-    padding-left: 16px;
-    border-bottom: 8px solid var(--teal);
 
 
+#main-menu {
+    padding: 0 16px;
+    ul {
+       text-align: right;
 
-    #logo {
-        ul {
-            list-style: none;
-
-        }
-
-        img {
-            padding-right: 150px;
-
-        }
-    }
-
-
-    #burger-btn {
-
-        display: block;
-
-        span,
-        span::before,
-        span::after {
-            height: 5px;
-            width: 40px;
-            background-color: var(--teal);
-            margin-right: 16px;
-        }
-
-        span {
-            display: block;
-            position: relative;
-
-            &::before {
-                position: absolute;
-                content: " ";
-                top: -16px;
-            }
-
-            &::after {
-                position: absolute;
-                content: " ";
-                top: 16px;
-            }
-        }
-    }
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-
-    #burger-container {
-        display: block;
-        position: relative;
-        z-index: 3;
-
-        @include lg {
-            display: none;
-        }
-    }
-
-    #main-menu {
-        ul {
+        @include lg{
             display: flex;
             padding-right: 25px;
-            list-style: none;
+            justify-content: flex-end;
+            align-items: center;
             gap: 16px;
         }
 
-        display: none;
+       li{
 
-        @include lg {
-            display: inline;
-        }
-
-
-        &.show-menu {
-            display: inline;
-            transition: .3s;
         }
     }
-    #main-menu a {
+
+    display: none;
+
+    @include lg {
+        display: inline;
+    }
+
+
+    &.show-menu {
+        display: inline;
+        transition: .3s;
+    }
+
+    a:link,
+    a:visited {
         text-decoration: none;
         color: black;
         transition: color 0.3s;
-      }
-      
-      #main-menu a:hover {
-        color: var(--teal);
-      }
 
+        &:hover,
+        &:active {
+            color: var(--teal);
+        }
+    }
 }
-

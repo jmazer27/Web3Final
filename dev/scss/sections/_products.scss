@@ -1,114 +1,38 @@
 /* =============
     Products
 ============= */
+#products{
+  background-color: var(--teal);
+  padding-bottom: 24px;
+}
+.title{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 20px;
+  padding-top: 1px;
+}
+.product-cards{
+  display: grid;
+  gap: 16px;
 
-// #basic-box{
-//     ul{
-//         list-style: none;
-//         display: grid;
-//         grid-template-columns: 1fr;
-
-//         li{
-//             display: flex;
-//             align-items: center;
-//             flex-direction: column;
-//             background-color: green;
-
-//         }
-//     }
-// }
-
-/* CSS for the product card */
-
-.productcard {
-  //   display: flex;
-  //   flex-direction: column;
-  align-items: center;
-  padding-bottom: 20px;
-  background-color: var(--offwhite);
-  border-radius: 34px;
-  width: fit-content;
-  margin: 0 6px;
-  overflow: hidden;
-  margin-bottom: 26px;
-  margin-left: 120px;
-
-  @include lg {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+  @include md{
+    grid-template-columns: repeat(3, 1fr);
   }
 
-
+  .productcard{
+    background-color: var(--white);
+    padding: 16px;
+    border-radius: 34px;
+    border-top-left-radius: 34px;
+    margin: 0 24px;
+    img{
+      width: 100%;
+    }
+  }
 }
 
 
-.productcard h1 {
-  text-align: center;
-}
 
 
-.productcard img {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-bottom: 1px solid var(--teal);
-  padding-bottom: 20px;
-}
-
-/* pricing */
-.productcard div:last-of-type {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-top: 20px;
-  width: 100%;
-}
-
-/* price container */
-.productcard div:last-of-type>div {
-  display: flex;
-  flex-direction: column;
-
-}
-
-/* price */
-.productcard h2 {
-  margin-bottom: 5px;
-  margin-left: 10px;
-
-}
-
-/* small text */
-.productcard .smallertext {
-  font-size: 10px;
-  margin-left: 10px;
-}
-
-/* monthly payment */
-.productcard p {
-  margin: 0;
-}
-
-/* button */
-.productcard button {
-  margin-right: 10px;
-  padding: 8px 16px;
-  border-radius: 20px;
-  border: none;
-  background-color: var(--teal);
-  color: white;
-  cursor: pointer;
-}
-
-/* Hover  */
-.productcard button:hover {
-  background-color: var(--darkteal);
-}
-
-/*  */
-.productcard ul {
-  list-style: none;
-}
