@@ -859,14 +859,23 @@ footer > div #sales P {
   }
 }
 .product-cards .productcard {
-  background-color: var(--white);
+  background-color: red;
   padding: 16px;
   border-radius: 34px;
-  border-top-left-radius: 34px;
   margin: 0 24px;
 }
 .product-cards .productcard img {
   width: 100%;
+}
+.product-cards .productcard h1 {
+  text-align: center;
+}
+.product-cards .productcard div {
+  text-align: right;
+}
+.product-cards .productcard button {
+  display: flex;
+  justify-content: right;
 }
 
 /* =============

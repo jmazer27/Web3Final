@@ -22,13 +22,25 @@
   }
 
   .productcard{
-    background-color: var(--white);
+    background-color: red;
     padding: 16px;
     border-radius: 34px;
-    border-top-left-radius: 34px;
     margin: 0 24px;
     img{
       width: 100%;
+    }
+
+    h1{
+      text-align: center;
+    }
+
+    div{
+      text-align: right;
+    }
+
+    button{
+      display: flex;
+      justify-content: right;
     }
   }
 }
