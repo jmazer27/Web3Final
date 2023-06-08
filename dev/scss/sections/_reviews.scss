@@ -2,30 +2,30 @@
     Reviews
 ============= */
 
-#reviews{
-    background-color: var(--teal);
-  }
-  .title{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 800;
-    color: white;
-    margin-bottom: 20px;
-  }
-  .product-cards{
-    display: grid;
-    gap: 16px;
+// #reviews{
+//     background-color: var(--teal);
+//   }
+//   .title{
+//     text-align: center;
+//     font-size: 30px;
+//     font-weight: 800;
+//     color: white;
+//     margin-bottom: 20px;
+//   }
+//   .product-cards{
+//     display: grid;
+//     gap: 16px;
   
-    @include md{
-      grid-template-columns: repeat(3, 1fr);
-    }
+//     @include md{
+//       grid-template-columns: repeat(3, 1fr);
+//     }
   
-    .productcard{
-      background-color: var(--white);
-      padding: 16px;
-      border-top-left-radius: 10px;
-      img{
-        width: 100%;
-      }
-    }
-  }
+//     .productcard{
+//       // background-color: var(--white);
+//       // padding: 16px;
+//       // border-top-left-radius: 10px;
+//       img{
+//         width: 100%;
+//       }
+//     }
+//   }

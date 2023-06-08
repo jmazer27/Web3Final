@@ -5,9 +5,10 @@
   background-color: var(--teal);
   padding-bottom: 24px;
 }
+
 .title{
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
   color: white;
   margin-bottom: 20px;
@@ -15,19 +16,23 @@
 }
 .product-cards{
   display: grid;
-  gap: 16px;
+  gap: 28px;
 
   @include md{
     grid-template-columns: repeat(3, 1fr);
+    
   }
 
+  
   .productcard{
-    background-color: red;
+    background-color: var(--offwhite);
     padding: 16px;
     border-radius: 34px;
     margin: 0 24px;
+    
     img{
       width: 100%;
+      border-bottom: 2px solid var(--teal);
     }
 
     h1{
@@ -39,8 +44,8 @@
     }
 
     button{
-      display: flex;
-      justify-content: right;
+    
+      margin-left: auto;
     }
   }
 }
@@ -48,3 +53,36 @@
 
 
 
+.review-cards{
+  display: grid;
+  gap: 28px;
+
+  @include md{
+    grid-template-columns: repeat(4, 1fr);
+    
+  }
+
+  
+  .reviewcard{
+    background-color: var(--offwhite);
+    padding: 16px;
+    border-radius: 34px;
+    margin: 0 24px;
+   
+    .stars{
+      text-align: center;
+    }
+    img{
+  
+    }
+
+    h1{
+      text-align: center;
+    }
+
+    p{
+      text-align: center;
+    }
+
+  }
+}
