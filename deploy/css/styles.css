@@ -362,6 +362,8 @@ body {
   border-radius: 79.5px;
   color: white;
   text-decoration: none;
+  border: 1px solid var(--teal);
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
 }
 
 .roundbutton:hover {
@@ -499,6 +501,8 @@ header #burger-container #burger-btn span::after {
 }
 header #main-menu {
   grid-area: nav;
+  margin-right: 16px;
+  line-height: 30px;
 }
 
 /* =============
@@ -599,6 +603,8 @@ footer > div #sales P {
   display: block;
   justify-content: center;
   text-align: center;
+  background-color: white;
+  padding: 16px;
 }
 #hero-info h1 {
   color: var(--teal);
@@ -697,6 +703,7 @@ footer > div #sales P {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". tech .";
+  background-color: white;
 }
 @media (min-width: 1440px) {
   #technical {
@@ -809,8 +816,9 @@ footer > div #sales P {
   justify-content: center;
   gap: 100px;
   padding-top: 15px;
-  padding-bottom: 15px;
-  padding-top: 10px;
+  padding-bottom: 75px;
+  margin-top: -40px;
+  background-color: #ffffff;
 }
 
 .card {
@@ -819,6 +827,7 @@ footer > div #sales P {
   text-align: left;
   border-radius: 10px;
   margin: 0;
+  margin-bottom: -75px;
 }
 
 .card-title {
@@ -907,6 +916,7 @@ footer > div #sales P {
   padding: 16px;
   border-radius: 34px;
   margin: 0 24px;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
 }
 .product-cards .productcard img {
   width: 100%;
@@ -936,20 +946,21 @@ footer > div #sales P {
   padding: 16px;
   border-radius: 34px;
   margin: 0 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
 }
 .review-cards .reviewcard .stars {
   text-align: center;
 }
 .review-cards .reviewcard h1 {
   text-align: center;
+  font-size: 20px;
 }
 .review-cards .reviewcard p {
   text-align: center;
 }
 
-/* =============
-    Reviews
-============= */
 /* Gallery section */
 #gallery {
   text-align: center;
