@@ -624,6 +624,11 @@ footer > div #sales P {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+@media (min-width: 1440px) {
+  #hero2full {
+    grid-template-columns: auto 1440px auto;
+  }
+}
 
 .header-container {
   text-align: center;
@@ -1192,6 +1197,7 @@ body {
 #thankyou h1 {
   color: var(--teal);
   margin-bottom: -1px;
+  text-align: center;
 }
 
 .order-summary {

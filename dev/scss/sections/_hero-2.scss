@@ -12,7 +12,10 @@ section {
     padding-top: 15px;
     padding-bottom: 15px;
 
-  
+    @include xxl{
+      grid-template-columns: auto 1440px auto;
+    }
+
 }
 .header-container {
     text-align: center;
@@ -91,6 +94,7 @@ section {
     .card-item {
       flex-basis: 100%;
       gap: 24px; /* Added to create the gap on smaller screens */
+     
     }
   }
   
