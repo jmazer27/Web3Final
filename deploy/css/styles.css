@@ -364,6 +364,10 @@ body {
   text-decoration: none;
 }
 
+.roundbutton:hover {
+  background: var(--darkteal);
+}
+
 /* =============
     Forms
 ============= */
@@ -806,6 +810,7 @@ footer > div #sales P {
   gap: 100px;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-top: 10px;
 }
 
 .card {
@@ -1026,7 +1031,7 @@ footer > div #sales P {
     justify-content: center;
     margin: 0;
     margin-right: 45px;
-    margin-left: 20px;
+    margin-left: 30px;
   }
   #images li:nth-child(n+5) {
     display: none;
@@ -1114,7 +1119,7 @@ footer > div #sales P {
   color: #ffffff;
   padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 48px;
   cursor: pointer;
   font-size: 16px;
   margin: 0 auto;
