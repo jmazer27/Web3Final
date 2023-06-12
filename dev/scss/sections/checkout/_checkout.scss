@@ -22,8 +22,8 @@
 .checkout-card {
     position: relative;
     width: 400px;
-    background-color: #fafafa;
-    border: 1px solid #009fb0;
+    background-color: var(--offwhite);
+    border: 1px solid var(--teal);
     padding: 20px;
     border-radius: 4px;
     box-sizing: border-box;
@@ -50,8 +50,8 @@
     height: 40px;
     padding: 10px;
     border: none;
-    background-color: #fafafa;
-    border: 1px solid #009fb0;
+    background-color: var(--offwhite);
+    border: 1px solid var(--teal);
     box-sizing: border-box;
 }
 
