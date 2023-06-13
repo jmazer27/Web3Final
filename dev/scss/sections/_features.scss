@@ -1,4 +1,9 @@
+
+
 #technical {
+
+  scroll-margin-top: var(--offset);
+  
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". tech .";

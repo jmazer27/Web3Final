@@ -2,7 +2,9 @@
     Navigation
 ============= */
 
-
+html{
+    scroll-behavior: smooth;
+}
 #main-menu {
     padding: 0 16px;
     ul {

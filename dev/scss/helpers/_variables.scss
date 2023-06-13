@@ -29,5 +29,12 @@ $screen-xxl-min: 1440px;
   --offwhite: #FAFAFA;
   --gray: #F5F5F5;
   --darkteal: #0c95a4;
+
+  --offset: 60px;
+  @include lg{
+    --offset: 70px;
+  }
 }
+
+
 
