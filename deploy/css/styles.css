@@ -1136,7 +1136,7 @@ footer > div #sales P {
   box-sizing: border-box;
 }
 
-.checkout-card a[type=submit] {
+.checkout-card a {
   background-color: var(--teal);
   color: #ffffff;
   padding: 10px 20px;
@@ -1149,9 +1149,11 @@ footer > div #sales P {
   text-align: center;
   margin-left: 100px;
   margin-right: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.checkout-card a[type=submit]:hover {
+.checkout-card a :hover {
   background-color: var(--darkteal);
 }
 
