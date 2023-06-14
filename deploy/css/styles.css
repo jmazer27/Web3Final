@@ -1220,6 +1220,10 @@ body {
   text-align: center;
 }
 
+#thankyou h3 {
+  text-align: center;
+}
+
 .order-summary {
   width: 200px;
   background-color: var(--offwhite);
