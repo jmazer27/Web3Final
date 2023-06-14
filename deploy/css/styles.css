@@ -1026,7 +1026,7 @@ footer > div #sales P {
 }
 
 /* Newsletter section */
-#newsletter {
+#newsletter1 {
   text-align: center;
   margin-top: 40px;
   display: grid;
@@ -1035,19 +1035,19 @@ footer > div #sales P {
   margin: 0 16px;
 }
 
-#newsletter h1 {
+#newsletter1 h1 {
   font-size: 24px;
   font-weight: 800;
   color: var(--teal);
   margin-top: 50px;
 }
 
-#newsletter .input-container {
+#newsletter1 .input-container {
   display: flex;
   align-items: center;
 }
 
-#newsletter input[type=email] {
+#newsletter1 input[type=email] {
   flex: 1;
   max-width: 300px;
   padding: 10px;
@@ -1055,7 +1055,7 @@ footer > div #sales P {
   border-color: var(--teal);
 }
 
-#newsletter .roundbutton {
+#newsletter1 .roundbutton {
   display: inline-block;
   padding: 10px 20px;
   margin-bottom: 40px;
@@ -1079,22 +1079,22 @@ footer > div #sales P {
     width: 99%;
     height: 99%;
   }
-  #newsletter {
+  #newsletter1 {
     grid-template-columns: 1fr;
   }
-  #newsletter .input-container {
+  #newsletter1 .input-container {
     flex-direction: column;
   }
-  #newsletter input[type=email] {
+  #newsletter1 input[type=email] {
     width: 100%;
     max-width: 300px;
   }
-  #newsletter .input-container {
+  #newsletter1 .input-container {
     display: grid;
     grid-template-columns: 1fr auto;
     justify-items: center;
   }
-  #newsletter .roundbutton {
+  #newsletter1 .roundbutton {
     justify-self: center;
   }
 }
