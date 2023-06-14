@@ -1155,20 +1155,8 @@ footer > div #sales P {
 }
 
 .checkout-card a {
-  background-color: var(--teal);
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 48px;
-  cursor: pointer;
-  font-size: 16px;
-  margin: 0 auto;
-  display: block;
-  text-align: center;
   margin-left: 100px;
   margin-right: 100px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .checkout-card a :hover {
@@ -1227,7 +1215,6 @@ body {
 .order-summary {
   width: 300px;
   background-color: var(--offwhite);
-  margin-top: 16px;
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
   border-radius: 34px;
   border: 1px solid var(--teal);
@@ -1275,6 +1262,7 @@ body {
   justify-items: center;
   grid-gap: 16px;
   margin: 0 16px;
+  margin-top: -50px;
 }
 
 #newsletter h1 {
