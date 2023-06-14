@@ -32,6 +32,10 @@ body {
     box-sizing: border-box;
     margin-top: 20px;
 
+    @include sm{
+      width: 200px;
+    }
+
   }
   
   .order-summary h2 {

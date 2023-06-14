@@ -1231,6 +1231,11 @@ body {
   box-sizing: border-box;
   margin-top: 20px;
 }
+@media (min-width: 576px) {
+  .order-summary {
+    width: 200px;
+  }
+}
 
 .order-summary h2 {
   font-weight: 300;
