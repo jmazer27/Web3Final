@@ -1,4 +1,5 @@
 body {
+  
     font-family: 'Hiragino Kaku Gothic Pro', Arial, sans-serif;
     background-color: #f1f1f1;
     margin: 0;
@@ -10,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 75px;
   }
   
   #thankyou h1 {
@@ -20,13 +21,17 @@ body {
   }
   
   .order-summary {
-    width: 400px;
-    background-color: #fafafa;
-    border: 1px solid #009fb0;
+   
+    width: 450px;
+    background-color: var(--offwhite);
+    margin-top: 16px;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
+    border-radius: 34px;
+    border: 1px solid var(--teal);
     padding: 20px;
-    border-radius: 4px;
     box-sizing: border-box;
     margin-top: 20px;
+
   }
   
   .order-summary h2 {
@@ -69,7 +74,7 @@ body {
       font-size: 24px;
       font-weight: 800;
       color: var(--teal);
-      margin-top: 50px;
+      margin-top: 30px;
     }
     
     #newsletter .input-container {
